@@ -1,0 +1,66 @@
+#outbox{/*計算機底座 */
+    width: 388px;
+    height: 450px; 
+    border: 0px;
+    background-color: rgb(117, 174, 184);
+    position: relative; /*对于父级元素的移动 */
+}
+
+#in_put{  /*輸入底座 */
+    background-color: white; 
+    width: 350px;
+    height: 100px;
+    display:inline-block;
+    position: relative;
+    left: 19px; 
+    top: 10px;
+}
+
+#input_box{    /*輸入框 */
+   height: 30px;
+   left: 20px;
+   font-size: 15px;
+   /*background-color: rgb(199, 184, 187);*/
+   position: absolute;
+}
+
+#out_box{       /*輸出框 */
+    height: 30px;
+    width: 100px;
+    left: 250px;
+    top: 30px;
+    color: rgb(45, 188, 255);
+    font-size: 30px;
+    /* background-color: rgb(199, 184, 187); */
+    position: absolute;
+}
+
+.inbox_1{
+    height: 50px;
+    width: 357px; 
+    /*background-color: rgb(71, 136, 161);*/ 
+    display: block;
+    position: relative;
+    left: 19px;
+    margin-top: 20px;
+}
+.inbox_2{  /*按鍵底座 */
+    height: 50px;
+    width: 265px; 
+    /*background-color: rgb(71, 136, 161); */
+    display: block;
+    position: relative;
+    left: 19px;
+    margin-top: 5px;
+}
+.ininbox{  /*按鍵框 */
+    width: 84px;
+    height: 35px;
+    background-color: rgb(196, 139, 146);
+    display: inline-block;  /*？？？問豆豆*/
+    position: relative;    
+    left: 0px;
+    top: 2px;
+    text-align: center; /*控制字体*/
+    padding-top: 10px; /*控制字体*/
+}
