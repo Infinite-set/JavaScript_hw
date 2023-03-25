@@ -8,45 +8,40 @@
     <body>
         <div id="outbox" >
             
-            <div id="in_put">
-                <p id="input_box"></p>
-                <p id="out_box"></p>
+            <div id="display">
+                <p id="input_display"></p>
+                <p id="out_display"></p>
             </div>
 
-            <div class="inbox_1">    
+            <div class="operator">    
                 <div class="ininbox" id="add" onclick="submit(add.innerHTML)">+</div>
                 <div class="ininbox" id="cut" onclick="submit(cut.innerHTML)">-</div>
                 <div class="ininbox" id="mult" onclick="submit(mult.innerHTML)">*</div>
                 <div class="ininbox" id="divi" onclick="submit(divi.innerHTML)">/</div>
             </div>
-            <div onclick="show()" style="height: 111px; width: 85px; background-color: rgb(196, 139, 146); position:absolute;right: 18px; top: 180px;text-align: center;padding-top: 100px; ">
-                =
-            </div>
-            <div class="inbox_2">
+            <div class="operand">
                 <div class="ininbox" id="seven" onclick="submit(seven.innerHTML)">7</div>
                 <div class="ininbox" id="eight" onclick="submit(eight.innerHTML)">8</div>
                 <div class="ininbox" id="nine" onclick="submit(nine.innerHTML)">9</div>
-                
+                <div class="ininbox" id="zero" onclick="submit(zero.innerHTML)">0</div>
             </div>
-            <div class="inbox_2">
+            <div class="operand">
                 <div class="ininbox" id="four" onclick="submit(four.innerHTML)">4</div>
                 <div class="ininbox" id="five" onclick="submit(five.innerHTML)">5</div>
                 <div class="ininbox" id="six" onclick="submit(six.innerHTML)">6</div>
+                <div class="ininbox" id="equal" onclick="show()">=</div>
             </div>
-            <div class="inbox_2">
+            <div class="operand">
                 <div class="ininbox" id="three" onclick="submit(three.innerHTML)">3</div>
                 <div class="ininbox" id="two" onclick="submit(two.innerHTML)">2</div>
                 <div class="ininbox" id="one" onclick="submit(one.innerHTML)">1</div>
-            </div>
-            <div class="inbox_2">
-                <div class="ininbox" id="zero" onclick="submit(zero.innerHTML)" style="width: 172px;">0</div>
-                <div class="ininbox" id="node" onclick="submit(node.innerHTML)">.</div>
+                <div class="ininbox" id="reset" onclick="get_empty()">c</div>
             </div>
 
-            <div onclick="get_empty()" style="height: 30px; width: 85px; background-color: rgb(245, 27, 52); position:absolute;right: 18px; top: 400px;text-align: center;padding-top: 10px; ">
-                c
-            </div>
+            
         </div>
+        <p>使用除法时，返回的整数值为取整后的值。</p>
+
     </body>
 </html>
 <script>
@@ -63,13 +58,13 @@
     function submit( symbol ){
         //alert(symbol);
         strbefore += symbol;
-        input_box.innerHTML = strbefore;
+        input_display.innerHTML = strbefore;
         //console.log(len_str);
     }//接收表达式
 
     function get_empty(){
-        out_box.innerHTML = '';
-        input_box.innerHTML = '';
+        out_display.innerHTML = '';
+        input_display.innerHTML = '';
         str.length = 0;
         strbefore = '';
         stack_num.length = 0;
@@ -166,7 +161,7 @@
         
         console.log(stack_num[0]);
         result = stack_num[0];
-        out_box.innerHTML = result;//写在另一个函数中为啥不对?????
+        out_display.innerHTML = result;//写在另一个函数中为啥不对?????
     }
     
 </script>

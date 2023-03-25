@@ -6,7 +6,8 @@
     position: relative; /*对于父级元素的移动 */
 }
 
-#in_put{  /*輸入底座 */
+/*display area*/
+#display{
     background-color: white; 
     width: 350px;
     height: 100px;
@@ -16,7 +17,7 @@
     top: 10px;
 }
 
-#input_box{    /*輸入框 */
+#input_display{    /*輸入框 */
    height: 30px;
    left: 20px;
    font-size: 15px;
@@ -24,7 +25,7 @@
    position: absolute;
 }
 
-#out_box{       /*輸出框 */
+#out_display{       /*輸出框 */
     height: 30px;
     width: 100px;
     left: 250px;
@@ -35,7 +36,7 @@
     position: absolute;
 }
 
-.inbox_1{
+.operator{
     height: 50px;
     width: 357px; 
     /*background-color: rgb(71, 136, 161);*/ 
@@ -44,9 +45,9 @@
     left: 19px;
     margin-top: 20px;
 }
-.inbox_2{  /*按鍵底座 */
+.operand{  /*按鍵底座 */
     height: 50px;
-    width: 265px; 
+    width: 357px; 
     /*background-color: rgb(71, 136, 161); */
     display: block;
     position: relative;
@@ -57,7 +58,7 @@
     width: 84px;
     height: 35px;
     background-color: rgb(196, 139, 146);
-    display: inline-block;  /*？？？問豆豆*/
+    display: inline-block;
     position: relative;    
     left: 0px;
     top: 2px;
