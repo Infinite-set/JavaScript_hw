@@ -7,38 +7,42 @@
         <script src="calculator.js" defer></script>
     </head>
     <body>
-        <div id="outbox" >
+        <center>
+        <h1 id="title">计算器</h1>
+        <div>
             <div id="display">
                 <p id="input_display"></p>
                 <p id="out_display"></p>
             </div>
 
             <div class="operator">    
-                <div class="ininbox" id="add" onclick="show(add.innerHTML)">+</div>
-                <div class="ininbox" id="sub" onclick="show(sub.innerHTML)">-</div>
-                <div class="ininbox" id="mult" onclick="show(mult.innerHTML)">*</div>
-                <div class="ininbox" id="divi" onclick="show(divi.innerHTML)">/</div>
+                <div class="inbox" id="add" onclick="show(add.innerHTML)">+</div>
+                <div class="inbox" id="sub" onclick="show(sub.innerHTML)">-</div>
+                <div class="inbox" id="mult" onclick="show(mult.innerHTML)">*</div>
+                <div class="inbox" id="divi" onclick="show(divi.innerHTML)">/</div>
             </div>
             <div class="operand">
-                <div class="ininbox" id="seven" onclick="show(seven.innerHTML)">7</div>
-                <div class="ininbox" id="eight" onclick="show(eight.innerHTML)">8</div>
-                <div class="ininbox" id="nine" onclick="show(nine.innerHTML)">9</div>
-                <div class="ininbox" id="zero" onclick="show(zero.innerHTML)">0</div>
+                <div class="inbox" id="seven" onclick="show(seven.innerHTML)">7</div>
+                <div class="inbox" id="eight" onclick="show(eight.innerHTML)">8</div>
+                <div class="inbox" id="nine" onclick="show(nine.innerHTML)">9</div>
+                <div class="inbox" id="zero" onclick="show(zero.innerHTML)">0</div>
             </div>
             <div class="operand">
-                <div class="ininbox" id="four" onclick="show(four.innerHTML)">4</div>
-                <div class="ininbox" id="five" onclick="show(five.innerHTML)">5</div>
-                <div class="ininbox" id="six" onclick="show(six.innerHTML)">6</div>
-                <div class="ininbox" id="equal" onclick="calc_result()">=</div>
+                <div class="inbox" id="four" onclick="show(four.innerHTML)">4</div>
+                <div class="inbox" id="five" onclick="show(five.innerHTML)">5</div>
+                <div class="inbox" id="six" onclick="show(six.innerHTML)">6</div>
+                <div class="inbox" id="equal" onclick="calc_result()">=</div>
             </div>
             <div class="operand">
-                <div class="ininbox" id="three" onclick="show(three.innerHTML)">3</div>
-                <div class="ininbox" id="two" onclick="show(two.innerHTML)">2</div>
-                <div class="ininbox" id="one" onclick="show(one.innerHTML)">1</div>
-                <div class="ininbox" id="reset" onclick="reset()">c</div>
+                <div class="inbox" id="one" onclick="show(one.innerHTML)">1</div>
+                <div class="inbox" id="two" onclick="show(two.innerHTML)">2</div>
+                <div class="inbox" id="three" onclick="show(three.innerHTML)">3</div>
+                <div class="half_inbox" id="point" onclick="show(point.innerHTML)">.</div>
+                <div class="half_inbox" id="reset" onclick="reset()">c</div>
             </div>
-
-            
         </div>
+        <p>计算结果精确到两位小数</p>
+        <p>请务必输入合法字符~</p>
+        </center>
     </body>
 </html>
