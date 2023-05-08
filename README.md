@@ -1,2 +1,2 @@
 # JavaScript_hw
-homework of JavaScript 2023 spring
+homework (and self-learnings) of JavaScript 2023 spring
