@@ -10,10 +10,14 @@
 
 1、eval函数的作用
 
-2、[]、{}竟然都是object
+2、[]、{}竟然都是object√，因为前者例如Array也是一种object
 
 3、// let j = "1919810" 会报错，因为？？？为啥下面这个就可以捏？
 
-4、为什么accessor property被叫做闭包？
+//4、为什么accessor property被叫做闭包？
 
 5、console.log([ , , ,].toString())的输出是两个逗号，为什么？
+
+6、arr2.sort((a,b) => {if(a<b) return -1; else return 1;}); 这两种写法等价，但是不可以写"a<b"!因为返回值必须是非0数字！（为啥？
+
+7、全等有什么意义？ch05_2里面的10、13行为什么要用全等？

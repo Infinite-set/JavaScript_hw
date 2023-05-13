@@ -1,4 +1,4 @@
-// this is the code for Pijs ch04 self-learnings (part 1)
+// this is the code for Pijs ch04 self-learnings (part 3)
 //"use strict"; //这句话的功能之一：给未声明的变量直接赋值时会报错
 
 //Built-in Object：JS中内置的一些对象，即boolean,number,string这三种原子类型的值，JS提供了原生的封装（就是把首字母大写）
